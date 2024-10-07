@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        /* Estilos do Pop-up */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 300px;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            z-index: 10;
+            border-radius: 10px;
+        }
+
+        .popup:target {
+            display: block;
+        }
+
+        .popup .close {
+            display: block;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .popup .close a {
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+        }
+
+        /* Estilos para escurecer o fundo quando o popup aparecer */
+        .overlay:target {
+            background-color: rgba(0, 0, 0, 0.7);
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+        }
+
+        /* Estilos do menu */
+        .menu-planets {
+            margin-top: 30px;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+
+        .menu-planets li {
+            margin: 0 15px;
+        }
+
+        .menu-planets a {
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .menu-planets a:hover {
+            color: #ff8800;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <!-- Sistema Solar -->
+        <div class="sun"></div>
+        <div class="mercuryOutline">
+            <div class="mercury">
+                <p>mercury</p>
+            </div>
+        </div>
+        <div class="venusOutline">
+            <div class="venus">
+                <p>venus</p>
+            </div>
+        </div>
+        <div class="terraOutline">
+            <div class="terra">
+                <div class="terraCirculo">
+                    <div class="terraLinha"></div>
+                </div>
+                <p>terra</p>
+            </div>
+        </div>
+        <div class="marteOutline">
+            <div class="marte">
+                <p>marte</p>
+            </div>
+        </div>
+        <div class="jupiterOutline">
+            <div class="jupiter">
+                <p>jupiter</p>
+            </div>
+        </div>
+        <div class="saturnoOutline">
+            <div class="saturno">
+                <p>saturno</p>
+            </div>
+        </div>
+        <div class="uranoOutline">
+            <div class="urano">
+                <p>urano</p>
+            </div>
+        </div>
+        <div class="netunoOutline">
+            <div class="netuno">
+                <p>netuno</p>
+            </div>
+        </div>
+    </div>
+
+    <div style="margin-top: 45%;">
+        <!-- Menu de Planetas -->
+        <ul class="menu-planets">
+            <li><a href="#popup-sun">Sol</a></li>
+            <li><a href="#popup-mercury">Mercúrio</a></li>
+            <li><a href="#popup-venus">Vênus</a></li>
+            <li><a href="#popup-terra">Terra</a></li>
+            <li><a href="#popup-marte">Marte</a></li>
+            <li><a href="#popup-jupiter">Júpiter</a></li>
+            <li><a href="#popup-saturno">Saturno</a></li>
+            <li><a href="#popup-urano">Urano</a></li>
+            <li><a href="#popup-netuno">Netuno</a></li>
+        </ul>
+    </div>
+
+    <!-- Pop-ups (mesmos que já configurados) -->
+
+    <!-- Pop-up do Sol -->
+    <div id="popup-sun" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre o Sol</h2>
+        <p>Aqui vão as informações sobre o Sol...</p>
+    </div>
+
+    <!-- Pop-up de Mercúrio -->
+    <div id="popup-mercury" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre Mercúrio</h2>
+        <p>Aqui vão as informações sobre Mercúrio...</p>
+    </div>
+
+    <!-- Pop-up de Vênus -->
+    <div id="popup-venus" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre Vênus</h2>
+        <p>Aqui vão as informações sobre Vênus...</p>
+    </div>
+
+    <!-- Pop-up da Terra -->
+    <div id="popup-terra" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre a Terra</h2>
+        <p>Aqui vão as informações sobre a Terra...</p>
+    </div>
+
+    <!-- Pop-up de Marte -->
+    <div id="popup-marte" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre Marte</h2>
+        <p>Aqui vão as informações sobre Marte...</p>
+    </div>
+
+    <!-- Pop-up de Júpiter -->
+    <div id="popup-jupiter" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre Júpiter</h2>
+        <p>Aqui vão as informações sobre Júpiter...</p>
+    </div>
+
+    <!-- Pop-up de Saturno -->
+    <div id="popup-saturno" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre Saturno</h2>
+        <p>Aqui vão as informações sobre Saturno...</p>
+    </div>
+
+    <!-- Pop-up de Urano -->
+    <div id="popup-urano" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre Urano</h2>
+        <p>Aqui vão as informações sobre Urano...</p>
+    </div>
+
+    <!-- Pop-up de Netuno -->
+    <div id="popup-netuno" class="popup">
+        <div class="close"><a href="#">×</a></div>
+        <h2>Informações sobre Netuno</h2>
+        <p>Aqui vão as informações sobre Netuno...</p>
+    </div>
+
+</body>
+
+</html>

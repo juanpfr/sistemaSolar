@@ -1,0 +1,342 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("../img/download.jpg");
+    background-size: 100%;
+}
+
+.sun {
+    height: 120px;
+    width: 120px;
+    /*background-color: antiquewhite;*/
+    background-image: url("../img/sol\ J77.png");
+    border-radius: 50%;
+    background-size: cover;
+    /*box-shadow: -4px 2px 56px #f9c05f;*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+
+
+
+.mercury {
+    height: 30px;
+    width: 30px;
+    /*background-color: rgb(31, 25, 101);*/
+    background-image: url("../img/Mercurio\ correto.jpg");
+    border-radius: 50%;
+    background-size:cover ;
+    box-shadow: -4px 2px 56px #37b9f0;
+    position: absolute;
+    left: 46%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: orbit2 2s linear infinite;
+
+}
+
+@keyframes orbit2 {
+    from {
+        transform: rotate(0deg)translatex(70px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(70px) rotate(-360deg)
+    }
+}
+
+p {
+    color: white;
+    font-family: system-ui,;
+    position: absolute;
+    left: -62px;
+    top: -11px;
+}
+
+.mercuryOutline,
+.venusOutline,
+.terraOutline,
+.marteOutline,
+.jupiterOutline,
+.saturnoOutline,
+.uranoOutline,
+.netunoOutline {
+
+    border-radius: 50%;
+    border: 1px dotted #ddd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.mercuryOutline {
+    height: 140px;
+    width: 140px;
+
+}
+
+.venus {
+
+    height: 40px;
+    width: 40px;
+    /*background-color: rgb(33, 137, 83);*/
+    background-image: url("../img/venus.jpg");
+    border-radius: 50%;
+    background-size:cover ;
+    box-shadow: -4px 2px 56px #f1f95f;
+    position: absolute;
+    left: 40%;
+    top: 42%;
+    transform: translate(-50%, -50%);
+    animation: orbit3 10s linear infinite;
+}
+
+@keyframes orbit3 {
+    from {
+        transform: rotate(0deg)translatex(100px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(100px) rotate(-360deg)
+    }
+}
+
+.venusOutline {
+    height: 200px;
+    width: 200px;
+
+}
+
+.terra {
+
+    height: 50px;
+    width: 50px;
+    /*background-color: rgb(232, 241, 71);*/
+    background-image: url("../img/Terra.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #09148d;
+    position: absolute;
+    left: 44%;
+    top: 43%;
+    transform: translate(-50%, -50%);
+    animation: orbit4 20s linear infinite;
+}
+
+@keyframes orbit4 {
+    from {
+        transform: rotate(0deg)translatex(150px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(150px) rotate(-360deg)
+    }
+}
+
+.terraOutline {
+    height: 300px;
+    width: 300px;
+}
+
+.terraCirculo {
+    height: 65px;
+    width: 65px;
+    border: 1px dotted #fff;
+    position: relative;
+    left: -8px;
+    top: -8px;
+    border-radius: 40px;
+
+
+}
+
+.terraLinha {
+
+    height: 10px;
+    width: 10px;
+    /*background-color: white;*/
+    background-image: url("../img/lua\ 1.jpg");
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 45%;
+    top: 45%;
+    border-radius: 40px;
+    animation: orbit5 3s linear infinite;;
+}
+
+@keyframes orbit5 {
+    from {
+        transform: rotate(0deg)translatex(33px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(33px) rotate(-360deg)
+    }
+}
+
+.marte{
+    height: 40px;
+    width: 40px;
+    /*background-color: rgb(141, 21, 73);*/
+    background-image: url("../img/Mercurio.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #ec280e;
+    position: absolute;
+    left: 46.5%;
+    top: 46.5%;
+    transform: translate(-50%, -50%);
+    animation: orbit6 30s linear infinite;
+}
+
+@keyframes orbit6 {
+    from {
+        transform: rotate(0deg)translatex(185px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(185px) rotate(-360deg)
+    }
+}
+
+.marteOutline{
+    height: 370px;
+    width: 370px;
+}
+
+.jupiter{
+    
+    height: 40px;
+    width: 40px;
+    /*background-color: rgb(180, 23, 120);*/
+    background-image: url("../img/Jupiter.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #f0efef;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    animation: orbit7 60s linear infinite;
+}
+
+@keyframes orbit7 {
+    from {
+        transform: rotate(0deg)translatex(217px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(217px) rotate(-360deg)
+    }
+}
+
+.jupiterOutline{
+    height: 430px;
+    width: 430px;
+}
+
+.saturno{
+    height: 60px;
+    width: 60px;
+    /*background-color: rgb(42, 194, 39);*/
+    background-image: url("../img/Saturno.png");
+    border-radius: 50%;
+    background-size: cover;
+   
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    animation: orbit9 90s linear infinite;
+}
+@keyframes orbit9 {
+    from {
+        transform: rotate(0deg)translatex(250px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(250px) rotate(-360deg)
+    }
+}
+
+
+.saturnoOutline{
+    height: 500px;
+    width: 500px;
+}
+
+.urano{
+    height: 50px;
+    width: 50px;
+    /*background-color: rgb(214, 76, 214);*/
+    background-image: url("../img/Urano.jpg");
+    border-radius: 50%;
+    background-size:cover;
+   
+    position: absolute;
+    left: 38%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    animation: orbit10 200s linear infinite;
+
+}
+
+@keyframes orbit10 {
+    from {
+        transform: rotate(0deg)translatex(280px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(280px) rotate(-360deg)
+    }
+}
+
+.uranoOutline{
+
+    height: 560px;
+    width: 560px;
+
+}
+
+
+.netuno{
+    height: 40px;
+    width: 40px;
+    /*background-color: rgb(221, 111, 37);*/
+    background-image: url("../img/netuno.jpg");
+    border-radius: 50%;
+    background-size: cover;
+    box-shadow: -4px 2px 56px #9581c1;
+    position: absolute;
+    left: 48%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    animation: orbit11 400s linear infinite;
+
+}
+
+@keyframes orbit11 {
+    from {
+        transform: rotate(0deg)translatex(310px) rotate(0deg)
+    }
+
+    to {
+        transform: rotate(360deg)translatex(310px) rotate(-360deg)
+    }
+}
+
+
+
+.netunoOutline{
+    height: 620px;
+    width: 620px;
+}
