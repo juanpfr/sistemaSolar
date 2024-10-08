@@ -15,14 +15,11 @@ body {
     /*box-shadow: -4px 2px 56px #f9c05f;*/
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 35%;
     transform: translate(-50%, -50%);
     
 
 }
-
-
-
 
 .mercury {
     height: 30px;
@@ -50,7 +47,7 @@ body {
     }
 }
 
-p {
+.solarSystem p {
     color: white;
     font-family: system-ui,;
     position: absolute;
@@ -70,7 +67,7 @@ p {
     border-radius: 50%;
     border: 1px dotted #ddd9;
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -334,9 +331,86 @@ p {
     }
 }
 
-
-
 .netunoOutline{
     height: 620px;
     width: 620px;
+}
+
+/* Estilos do Pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.popup:target {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup .close {
+    display: block;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.popup .close a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* Estilos para escurecer o fundo quando o popup aparecer */
+.overlay:target {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+}
+
+/* Estilos do menu */
+.menu-planets {
+    margin-top: 30px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.menu-planets li {
+    margin: 0 40px;
+}
+
+.menu-planets a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 15px 10px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+}
+
+.menu-planets a:hover {
+    background-color: white;
+    color: #202020;
+    border: 1px solid #202020;
+    
+}
+
+.nav{
+    margin-top: 50%;
 }
