@@ -366,8 +366,15 @@ body {
 
 .popup .close a {
     text-decoration: none;
-    font-size: 20px;
-    color: black;
+    font-size: 30px;
+    color: white;
+    background: black;
+    padding: 5px 13px;
+    border-radius: 50%;
+}
+
+.popup .close a:hover {
+    background: red;
 }
 
 /* Estilos para escurecer o fundo quando o popup aparecer */
