@@ -15,7 +15,7 @@ body {
     /*box-shadow: -4px 2px 56px #f9c05f;*/
     position: absolute;
     left: 50%;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%, -50%);
     
 
@@ -67,7 +67,7 @@ body {
     border-radius: 50%;
     border: 1px dotted #ddd9;
     position: absolute;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
@@ -340,7 +340,7 @@ body {
 .popup {
     display: none;
     position: fixed;
-    top: 35%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
@@ -398,7 +398,7 @@ body {
 }
 
 .menu-planets li {
-    margin: 0 40px;
+    margin: 0 25px;
 }
 
 .menu-planets a {
@@ -419,5 +419,6 @@ body {
 }
 
 .nav{
-    margin-top: 50%;
+    margin-top: 55%;
+    margin-bottom: 5%;
 }
